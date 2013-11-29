@@ -6,6 +6,7 @@
 *.app*
 *.DS_Store
 *.xcworkspacedata
+xcuserdata/
 
 # vs2010
 *.opensdf

@@ -28,6 +28,7 @@ void testApp::setup() {
 	calibrationReady = false;
 	setupMesh();	
 	setupControlPanel();
+    syphonClient.initialize("Arena", "Composition");
 }
 
 void testApp::update() {
@@ -194,6 +195,10 @@ void testApp::render() {
 		lastVertTimestamp = vertTimestamp;
 		
 		shader.begin();
+        if (syphonClient.maybeBind()) {
+            shader.setUniform2f("videoSize", syphonClient.getWidth(), syphonClient.getHeight());
+            shader.setUniformTexture("video", syphonClient.getTexture(), syphonClient.getTextureId());
+        }
 		shader.setUniform1f("elapsedTime", ofGetElapsedTimef());
 		shader.end();
 	}
@@ -217,6 +222,14 @@ void testApp::render() {
 		case 3: // occludedWireframe
 			LineArt::draw(objectMesh, false, transparentBlack, useShader ? &shader : NULL);
 			break;
+        case 4: // shader + wireframe
+            shader.begin();
+			glEnable(GL_CULL_FACE);
+			glCullFace(GL_BACK);
+			objectMesh.drawFaces();
+			shader.end();
+            LineArt::draw(objectMesh, false, transparentBlack, NULL);
+            break;
 	}
 	glPopAttrib();
 	if(useLights) {
@@ -366,7 +379,7 @@ void testApp::setupControlPanel() {
 	panel.addToggle("setupMode", true);
 	panel.addSlider("scale", 1, .1, 25);
 	panel.addSlider("backgroundColor", 0, 0, 255, true);
-	panel.addMultiToggle("drawMode", 3, variadic("faces")("fullWireframe")("outlineWireframe")("occludedWireframe"));
+	panel.addMultiToggle("drawMode", 3, variadic("faces")("fullWireframe")("outlineWireframe")("occludedWireframe")("shaderAndWireframe"));
 	panel.addMultiToggle("shading", 0, variadic("none")("lights")("shader"));
 	panel.addToggle("loadCalibration", false);
 	panel.addToggle("saveCalibration", false);

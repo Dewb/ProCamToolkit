@@ -5,7 +5,9 @@
 #include "ofxAssimpModelLoader.h"
 #include "ofxProCamToolkit.h"
 #include "ofxAutoControlPanel.h"
+#include "ofxSyphon.h"
 #include "LineArt.h"
+#include "radomeSyphonClient.h"
 
 class testApp : public ofBaseApp {
 public:
@@ -39,6 +41,7 @@ public:
 	ofMesh imageMesh;
 	ofLight light;
 	ofxAutoControlPanel panel;
+    radomeSyphonClient syphonClient;
 	
 	vector<cv::Point3f> objectPoints;
 	vector<cv::Point2f> imagePoints;

@@ -4,6 +4,7 @@
 uniform float elapsedTime;
 varying vec3 position, normal;
 varying float randomOffset;
+uniform sampler2DRect video;
 
 const vec4 on = vec4(1.);
 const vec4 off = vec4(vec3(0.), 1.);
@@ -33,14 +34,22 @@ float quasi(float interferenceAngle, vec2 point) {
 }
 
 void main() {
+    // Draw Syphon texture (prototype; coordinates specific to test model.)
+    vec2 texCoords = vec2(810.0 - (position.x*0.220+180.0 + position.y*0.225+180.0), position.z*0.32);
+    gl_FragColor = texture2DRect(video, texCoords);
+}
+
+
+/*
+void main() {
 	float stages = 6.;
 	float stage = mod(elapsedTime * .06, stages);
 
 	if(stage == 0.) {
 		vec2 normPosition = (position.xz + position.yx) / 100.;
 		float b = quasi(elapsedTime*0.002, (normPosition)*200.);
-		gl_FragColor = vec4(vec3(b), 1.);
-	} else if(stage < 1.) {
+		gl_FragColor = vec4(vec3(0.6, 0.0, 0.2), 1.);
+    } else if(stage < 1.) {
 		// diagonal stripes
 		const float speed = 50.;
 		const float scale = 50.;
@@ -56,9 +65,9 @@ void main() {
 			gl_FragColor = 
 				(mod((-position.z) + (elapsedTime * speed), scale) < (scale / 2.)) ?
 				on : off;
-		/*} else {
-			gl_FragColor = off;
-		}*/
+		} else {
+		//	gl_FragColor = off;
+		}
 	} else if(stage < 5.) {
 		// crazy triangles, grid lines
 		float speed = 10.;
@@ -86,3 +95,4 @@ void main() {
 		gl_FragColor = abs(side) < 100. + 280. * sin(elapsedTime * 1.) ? on : off;
 	}
 }
+*/
