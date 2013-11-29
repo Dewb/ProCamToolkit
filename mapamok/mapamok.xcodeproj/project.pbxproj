@@ -51,8 +51,10 @@
 		274D657D150C25E300521B70 /* Utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 274D651E150C25E300521B70 /* Utilities.cpp */; };
 		274D657E150C25E300521B70 /* Wrappers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 274D651F150C25E300521B70 /* Wrappers.cpp */; };
 		274D67D2150C273600521B70 /* opencv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274D6766150C273500521B70 /* opencv.a */; };
+		5B3022D0184878C0005C75A8 /* ETF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3022CE184878C0005C75A8 /* ETF.cpp */; };
+		5B3022D1184878C0005C75A8 /* fdog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B3022CF184878C0005C75A8 /* fdog.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
-		E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworks.a */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
 		E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */; };
@@ -161,77 +163,77 @@
 		274D63FF150C25AC00521B70 /* pre-rebase.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "pre-rebase.sample"; path = "../../../addons/ofxControlPanel/.git/hooks/pre-rebase.sample"; sourceTree = SOURCE_ROOT; };
 		274D6400150C25AC00521B70 /* prepare-commit-msg.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "prepare-commit-msg.sample"; path = "../../../addons/ofxControlPanel/.git/hooks/prepare-commit-msg.sample"; sourceTree = SOURCE_ROOT; };
 		274D6401150C25AC00521B70 /* update.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = update.sample; path = ../../../addons/ofxControlPanel/.git/hooks/update.sample; sourceTree = SOURCE_ROOT; };
-		274D6402150C25AC00521B70 /* index */ = {isa = PBXFileReference; lastKnownFileType = file; name = index; path = ../../../addons/ofxControlPanel/.git/index; sourceTree = SOURCE_ROOT; };
+		274D6402150C25AC00521B70 /* index */ = {isa = PBXFileReference; lastKnownFileType = text; name = index; path = ../../../addons/ofxControlPanel/.git/index; sourceTree = SOURCE_ROOT; };
 		274D6404150C25AC00521B70 /* exclude */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = exclude; path = ../../../addons/ofxControlPanel/.git/info/exclude; sourceTree = SOURCE_ROOT; };
 		274D6406150C25AC00521B70 /* HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HEAD; path = ../../../addons/ofxControlPanel/.git/logs/HEAD; sourceTree = SOURCE_ROOT; };
 		274D6409150C25AC00521B70 /* master */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = master; path = ../../../addons/ofxControlPanel/.git/logs/refs/heads/master; sourceTree = SOURCE_ROOT; };
 		274D640A150C25AC00521B70 /* noexample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = noexample; path = ../../../addons/ofxControlPanel/.git/logs/refs/heads/noexample; sourceTree = SOURCE_ROOT; };
 		274D640D150C25AC00521B70 /* master */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = master; path = ../../../addons/ofxControlPanel/.git/logs/refs/remotes/origin/master; sourceTree = SOURCE_ROOT; };
-		274D6410150C25AC00521B70 /* b64e46af8f1f0b4ae369ef66961fb97e0b24dc */ = {isa = PBXFileReference; lastKnownFileType = file; name = b64e46af8f1f0b4ae369ef66961fb97e0b24dc; path = ../../../addons/ofxControlPanel/.git/objects/03/b64e46af8f1f0b4ae369ef66961fb97e0b24dc; sourceTree = SOURCE_ROOT; };
-		274D6412150C25AC00521B70 /* 999b120f1eb25d6a8c4508e7c94cb305c6250a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 999b120f1eb25d6a8c4508e7c94cb305c6250a; path = ../../../addons/ofxControlPanel/.git/objects/09/999b120f1eb25d6a8c4508e7c94cb305c6250a; sourceTree = SOURCE_ROOT; };
+		274D6410150C25AC00521B70 /* b64e46af8f1f0b4ae369ef66961fb97e0b24dc */ = {isa = PBXFileReference; lastKnownFileType = text; name = b64e46af8f1f0b4ae369ef66961fb97e0b24dc; path = ../../../addons/ofxControlPanel/.git/objects/03/b64e46af8f1f0b4ae369ef66961fb97e0b24dc; sourceTree = SOURCE_ROOT; };
+		274D6412150C25AC00521B70 /* 999b120f1eb25d6a8c4508e7c94cb305c6250a */ = {isa = PBXFileReference; lastKnownFileType = text; name = 999b120f1eb25d6a8c4508e7c94cb305c6250a; path = ../../../addons/ofxControlPanel/.git/objects/09/999b120f1eb25d6a8c4508e7c94cb305c6250a; sourceTree = SOURCE_ROOT; };
 		274D6414150C25AC00521B70 /* 311a9016ac8650717c483f3f1b6505cc18d823 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 311a9016ac8650717c483f3f1b6505cc18d823; path = ../../../addons/ofxControlPanel/.git/objects/0b/311a9016ac8650717c483f3f1b6505cc18d823; sourceTree = SOURCE_ROOT; };
-		274D6415150C25AC00521B70 /* 5b16cb3114262ce3ae28939aaa4fdf6923f8a1 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5b16cb3114262ce3ae28939aaa4fdf6923f8a1; path = ../../../addons/ofxControlPanel/.git/objects/0b/5b16cb3114262ce3ae28939aaa4fdf6923f8a1; sourceTree = SOURCE_ROOT; };
-		274D6417150C25AC00521B70 /* f578211d75b679f800c94244622e96b9e8ea1c */ = {isa = PBXFileReference; lastKnownFileType = file; name = f578211d75b679f800c94244622e96b9e8ea1c; path = ../../../addons/ofxControlPanel/.git/objects/0c/f578211d75b679f800c94244622e96b9e8ea1c; sourceTree = SOURCE_ROOT; };
-		274D6419150C25AC00521B70 /* c7babb6698556829df06996b5363f95226306d */ = {isa = PBXFileReference; lastKnownFileType = file; name = c7babb6698556829df06996b5363f95226306d; path = ../../../addons/ofxControlPanel/.git/objects/12/c7babb6698556829df06996b5363f95226306d; sourceTree = SOURCE_ROOT; };
-		274D641B150C25AC00521B70 /* a6e47636e3b4b75047665a89cb0deaa10b9b3b */ = {isa = PBXFileReference; lastKnownFileType = file; name = a6e47636e3b4b75047665a89cb0deaa10b9b3b; path = ../../../addons/ofxControlPanel/.git/objects/1a/a6e47636e3b4b75047665a89cb0deaa10b9b3b; sourceTree = SOURCE_ROOT; };
-		274D641D150C25AC00521B70 /* 4330afd56d003087fb82d21bfa73e862b242fc */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4330afd56d003087fb82d21bfa73e862b242fc; path = ../../../addons/ofxControlPanel/.git/objects/22/4330afd56d003087fb82d21bfa73e862b242fc; sourceTree = SOURCE_ROOT; };
-		274D641F150C25AC00521B70 /* c960f4a69df1c424f13229683a7334d1e4769b */ = {isa = PBXFileReference; lastKnownFileType = file; name = c960f4a69df1c424f13229683a7334d1e4769b; path = ../../../addons/ofxControlPanel/.git/objects/23/c960f4a69df1c424f13229683a7334d1e4769b; sourceTree = SOURCE_ROOT; };
-		274D6421150C25AC00521B70 /* 618e4015f8bab67d56e8e75eb6aa0be2c31ed9 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 618e4015f8bab67d56e8e75eb6aa0be2c31ed9; path = ../../../addons/ofxControlPanel/.git/objects/26/618e4015f8bab67d56e8e75eb6aa0be2c31ed9; sourceTree = SOURCE_ROOT; };
-		274D6423150C25AC00521B70 /* 4e364cfbf513271f0bc43a44083cf00a27e7eb */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4e364cfbf513271f0bc43a44083cf00a27e7eb; path = ../../../addons/ofxControlPanel/.git/objects/29/4e364cfbf513271f0bc43a44083cf00a27e7eb; sourceTree = SOURCE_ROOT; };
-		274D6425150C25AC00521B70 /* 776ee6bd7e131ef680f48e8b2fb61a727fb548 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 776ee6bd7e131ef680f48e8b2fb61a727fb548; path = ../../../addons/ofxControlPanel/.git/objects/37/776ee6bd7e131ef680f48e8b2fb61a727fb548; sourceTree = SOURCE_ROOT; };
-		274D6426150C25AC00521B70 /* 9e81eacc575059f9e33cbffa2e753ed1f57fd2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 9e81eacc575059f9e33cbffa2e753ed1f57fd2; path = ../../../addons/ofxControlPanel/.git/objects/37/9e81eacc575059f9e33cbffa2e753ed1f57fd2; sourceTree = SOURCE_ROOT; };
-		274D6428150C25AC00521B70 /* 3b20279dc5959a2a43272fea20d433a2ab2fec */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3b20279dc5959a2a43272fea20d433a2ab2fec; path = ../../../addons/ofxControlPanel/.git/objects/41/3b20279dc5959a2a43272fea20d433a2ab2fec; sourceTree = SOURCE_ROOT; };
-		274D642A150C25AC00521B70 /* 38a38282133b5d2033b10e207c3fc253cae8bf */ = {isa = PBXFileReference; lastKnownFileType = file; name = 38a38282133b5d2033b10e207c3fc253cae8bf; path = ../../../addons/ofxControlPanel/.git/objects/42/38a38282133b5d2033b10e207c3fc253cae8bf; sourceTree = SOURCE_ROOT; };
-		274D642C150C25AC00521B70 /* 6d6a573141d51891d165589222efafda826695 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6d6a573141d51891d165589222efafda826695; path = ../../../addons/ofxControlPanel/.git/objects/4d/6d6a573141d51891d165589222efafda826695; sourceTree = SOURCE_ROOT; };
-		274D642E150C25AC00521B70 /* ae3ba97bbfeef65b6421c8b71a41e007396e46 */ = {isa = PBXFileReference; lastKnownFileType = file; name = ae3ba97bbfeef65b6421c8b71a41e007396e46; path = ../../../addons/ofxControlPanel/.git/objects/53/ae3ba97bbfeef65b6421c8b71a41e007396e46; sourceTree = SOURCE_ROOT; };
-		274D6430150C25AC00521B70 /* 2f6bbcc16dc368936920d08311f08a91212566 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2f6bbcc16dc368936920d08311f08a91212566; path = ../../../addons/ofxControlPanel/.git/objects/54/2f6bbcc16dc368936920d08311f08a91212566; sourceTree = SOURCE_ROOT; };
-		274D6432150C25AC00521B70 /* 06f13305edb6775160c25adabf42c1d911b997 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 06f13305edb6775160c25adabf42c1d911b997; path = ../../../addons/ofxControlPanel/.git/objects/55/06f13305edb6775160c25adabf42c1d911b997; sourceTree = SOURCE_ROOT; };
-		274D6434150C25AC00521B70 /* 8643ef0f378d556dfff7c6ccbbf0b195a7ca5a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 8643ef0f378d556dfff7c6ccbbf0b195a7ca5a; path = ../../../addons/ofxControlPanel/.git/objects/57/8643ef0f378d556dfff7c6ccbbf0b195a7ca5a; sourceTree = SOURCE_ROOT; };
-		274D6436150C25AC00521B70 /* a877b91dadc96fad59ec3d7e661188b56a1d3f */ = {isa = PBXFileReference; lastKnownFileType = file; name = a877b91dadc96fad59ec3d7e661188b56a1d3f; path = ../../../addons/ofxControlPanel/.git/objects/58/a877b91dadc96fad59ec3d7e661188b56a1d3f; sourceTree = SOURCE_ROOT; };
-		274D6438150C25AC00521B70 /* 083b71e398035130e4b46fda555af1d5d3e3cc */ = {isa = PBXFileReference; lastKnownFileType = file; name = 083b71e398035130e4b46fda555af1d5d3e3cc; path = ../../../addons/ofxControlPanel/.git/objects/5b/083b71e398035130e4b46fda555af1d5d3e3cc; sourceTree = SOURCE_ROOT; };
-		274D6439150C25AC00521B70 /* 6f916eb1b98b394ef452556530cf5972535374 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 6f916eb1b98b394ef452556530cf5972535374; path = ../../../addons/ofxControlPanel/.git/objects/5b/6f916eb1b98b394ef452556530cf5972535374; sourceTree = SOURCE_ROOT; };
-		274D643B150C25AC00521B70 /* 9115d1889e431b8eee3b984fb87f633c2be3ab */ = {isa = PBXFileReference; lastKnownFileType = file; name = 9115d1889e431b8eee3b984fb87f633c2be3ab; path = ../../../addons/ofxControlPanel/.git/objects/5e/9115d1889e431b8eee3b984fb87f633c2be3ab; sourceTree = SOURCE_ROOT; };
-		274D643D150C25AC00521B70 /* f41dee26abc17020eba7e0b95e2e48a7b0edc4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = f41dee26abc17020eba7e0b95e2e48a7b0edc4; path = ../../../addons/ofxControlPanel/.git/objects/5f/f41dee26abc17020eba7e0b95e2e48a7b0edc4; sourceTree = SOURCE_ROOT; };
-		274D643F150C25AC00521B70 /* 630f2991badded8652a99c44c16dd466302733 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 630f2991badded8652a99c44c16dd466302733; path = ../../../addons/ofxControlPanel/.git/objects/61/630f2991badded8652a99c44c16dd466302733; sourceTree = SOURCE_ROOT; };
-		274D6441150C25AC00521B70 /* c67bba6811bd14d045c013d94936ad77f6620a */ = {isa = PBXFileReference; lastKnownFileType = file; name = c67bba6811bd14d045c013d94936ad77f6620a; path = ../../../addons/ofxControlPanel/.git/objects/67/c67bba6811bd14d045c013d94936ad77f6620a; sourceTree = SOURCE_ROOT; };
-		274D6443150C25AC00521B70 /* 36f80b6f1043ab2622f8a5c48ead89064b9d8a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 36f80b6f1043ab2622f8a5c48ead89064b9d8a; path = ../../../addons/ofxControlPanel/.git/objects/68/36f80b6f1043ab2622f8a5c48ead89064b9d8a; sourceTree = SOURCE_ROOT; };
-		274D6445150C25AC00521B70 /* 0191ec2ecbe40f012b1290219fcc7e0812758c */ = {isa = PBXFileReference; lastKnownFileType = file; name = 0191ec2ecbe40f012b1290219fcc7e0812758c; path = ../../../addons/ofxControlPanel/.git/objects/72/0191ec2ecbe40f012b1290219fcc7e0812758c; sourceTree = SOURCE_ROOT; };
-		274D6446150C25AC00521B70 /* 2cc42f46252447adc3f17ee505aa2e151ba92e */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2cc42f46252447adc3f17ee505aa2e151ba92e; path = ../../../addons/ofxControlPanel/.git/objects/72/2cc42f46252447adc3f17ee505aa2e151ba92e; sourceTree = SOURCE_ROOT; };
-		274D6448150C25AC00521B70 /* a8625e06df898157e2db73f26613d733255f5c */ = {isa = PBXFileReference; lastKnownFileType = file; name = a8625e06df898157e2db73f26613d733255f5c; path = ../../../addons/ofxControlPanel/.git/objects/77/a8625e06df898157e2db73f26613d733255f5c; sourceTree = SOURCE_ROOT; };
-		274D644A150C25AC00521B70 /* b5a295eec9d8d2bf2d6921ed2fa33299f8a672 */ = {isa = PBXFileReference; lastKnownFileType = file; name = b5a295eec9d8d2bf2d6921ed2fa33299f8a672; path = ../../../addons/ofxControlPanel/.git/objects/78/b5a295eec9d8d2bf2d6921ed2fa33299f8a672; sourceTree = SOURCE_ROOT; };
-		274D644C150C25AC00521B70 /* 47af1a2ae58e146de378ea50bd96351dab998b */ = {isa = PBXFileReference; lastKnownFileType = file; name = 47af1a2ae58e146de378ea50bd96351dab998b; path = ../../../addons/ofxControlPanel/.git/objects/87/47af1a2ae58e146de378ea50bd96351dab998b; sourceTree = SOURCE_ROOT; };
-		274D644E150C25AC00521B70 /* cf5750cd76b0298eee8bd9cdec854e92b7e9cb */ = {isa = PBXFileReference; lastKnownFileType = file; name = cf5750cd76b0298eee8bd9cdec854e92b7e9cb; path = ../../../addons/ofxControlPanel/.git/objects/89/cf5750cd76b0298eee8bd9cdec854e92b7e9cb; sourceTree = SOURCE_ROOT; };
-		274D6450150C25AC00521B70 /* b469571f4c7e76a0b734551e3fc5754d9e5961 */ = {isa = PBXFileReference; lastKnownFileType = file; name = b469571f4c7e76a0b734551e3fc5754d9e5961; path = ../../../addons/ofxControlPanel/.git/objects/8c/b469571f4c7e76a0b734551e3fc5754d9e5961; sourceTree = SOURCE_ROOT; };
-		274D6452150C25AC00521B70 /* 066fac7d63327e231d6ca5319c53525a4684ef */ = {isa = PBXFileReference; lastKnownFileType = file; name = 066fac7d63327e231d6ca5319c53525a4684ef; path = ../../../addons/ofxControlPanel/.git/objects/93/066fac7d63327e231d6ca5319c53525a4684ef; sourceTree = SOURCE_ROOT; };
-		274D6454150C25AC00521B70 /* 160f113e613c52ba60d41fa817619bd167b85c */ = {isa = PBXFileReference; lastKnownFileType = file; name = 160f113e613c52ba60d41fa817619bd167b85c; path = ../../../addons/ofxControlPanel/.git/objects/9b/160f113e613c52ba60d41fa817619bd167b85c; sourceTree = SOURCE_ROOT; };
+		274D6415150C25AC00521B70 /* 5b16cb3114262ce3ae28939aaa4fdf6923f8a1 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 5b16cb3114262ce3ae28939aaa4fdf6923f8a1; path = ../../../addons/ofxControlPanel/.git/objects/0b/5b16cb3114262ce3ae28939aaa4fdf6923f8a1; sourceTree = SOURCE_ROOT; };
+		274D6417150C25AC00521B70 /* f578211d75b679f800c94244622e96b9e8ea1c */ = {isa = PBXFileReference; lastKnownFileType = text; name = f578211d75b679f800c94244622e96b9e8ea1c; path = ../../../addons/ofxControlPanel/.git/objects/0c/f578211d75b679f800c94244622e96b9e8ea1c; sourceTree = SOURCE_ROOT; };
+		274D6419150C25AC00521B70 /* c7babb6698556829df06996b5363f95226306d */ = {isa = PBXFileReference; lastKnownFileType = text; name = c7babb6698556829df06996b5363f95226306d; path = ../../../addons/ofxControlPanel/.git/objects/12/c7babb6698556829df06996b5363f95226306d; sourceTree = SOURCE_ROOT; };
+		274D641B150C25AC00521B70 /* a6e47636e3b4b75047665a89cb0deaa10b9b3b */ = {isa = PBXFileReference; lastKnownFileType = text; name = a6e47636e3b4b75047665a89cb0deaa10b9b3b; path = ../../../addons/ofxControlPanel/.git/objects/1a/a6e47636e3b4b75047665a89cb0deaa10b9b3b; sourceTree = SOURCE_ROOT; };
+		274D641D150C25AC00521B70 /* 4330afd56d003087fb82d21bfa73e862b242fc */ = {isa = PBXFileReference; lastKnownFileType = text; name = 4330afd56d003087fb82d21bfa73e862b242fc; path = ../../../addons/ofxControlPanel/.git/objects/22/4330afd56d003087fb82d21bfa73e862b242fc; sourceTree = SOURCE_ROOT; };
+		274D641F150C25AC00521B70 /* c960f4a69df1c424f13229683a7334d1e4769b */ = {isa = PBXFileReference; lastKnownFileType = text; name = c960f4a69df1c424f13229683a7334d1e4769b; path = ../../../addons/ofxControlPanel/.git/objects/23/c960f4a69df1c424f13229683a7334d1e4769b; sourceTree = SOURCE_ROOT; };
+		274D6421150C25AC00521B70 /* 618e4015f8bab67d56e8e75eb6aa0be2c31ed9 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 618e4015f8bab67d56e8e75eb6aa0be2c31ed9; path = ../../../addons/ofxControlPanel/.git/objects/26/618e4015f8bab67d56e8e75eb6aa0be2c31ed9; sourceTree = SOURCE_ROOT; };
+		274D6423150C25AC00521B70 /* 4e364cfbf513271f0bc43a44083cf00a27e7eb */ = {isa = PBXFileReference; lastKnownFileType = text; name = 4e364cfbf513271f0bc43a44083cf00a27e7eb; path = ../../../addons/ofxControlPanel/.git/objects/29/4e364cfbf513271f0bc43a44083cf00a27e7eb; sourceTree = SOURCE_ROOT; };
+		274D6425150C25AC00521B70 /* 776ee6bd7e131ef680f48e8b2fb61a727fb548 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 776ee6bd7e131ef680f48e8b2fb61a727fb548; path = ../../../addons/ofxControlPanel/.git/objects/37/776ee6bd7e131ef680f48e8b2fb61a727fb548; sourceTree = SOURCE_ROOT; };
+		274D6426150C25AC00521B70 /* 9e81eacc575059f9e33cbffa2e753ed1f57fd2 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 9e81eacc575059f9e33cbffa2e753ed1f57fd2; path = ../../../addons/ofxControlPanel/.git/objects/37/9e81eacc575059f9e33cbffa2e753ed1f57fd2; sourceTree = SOURCE_ROOT; };
+		274D6428150C25AC00521B70 /* 3b20279dc5959a2a43272fea20d433a2ab2fec */ = {isa = PBXFileReference; lastKnownFileType = text; name = 3b20279dc5959a2a43272fea20d433a2ab2fec; path = ../../../addons/ofxControlPanel/.git/objects/41/3b20279dc5959a2a43272fea20d433a2ab2fec; sourceTree = SOURCE_ROOT; };
+		274D642A150C25AC00521B70 /* 38a38282133b5d2033b10e207c3fc253cae8bf */ = {isa = PBXFileReference; lastKnownFileType = text; name = 38a38282133b5d2033b10e207c3fc253cae8bf; path = ../../../addons/ofxControlPanel/.git/objects/42/38a38282133b5d2033b10e207c3fc253cae8bf; sourceTree = SOURCE_ROOT; };
+		274D642C150C25AC00521B70 /* 6d6a573141d51891d165589222efafda826695 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 6d6a573141d51891d165589222efafda826695; path = ../../../addons/ofxControlPanel/.git/objects/4d/6d6a573141d51891d165589222efafda826695; sourceTree = SOURCE_ROOT; };
+		274D642E150C25AC00521B70 /* ae3ba97bbfeef65b6421c8b71a41e007396e46 */ = {isa = PBXFileReference; lastKnownFileType = text; name = ae3ba97bbfeef65b6421c8b71a41e007396e46; path = ../../../addons/ofxControlPanel/.git/objects/53/ae3ba97bbfeef65b6421c8b71a41e007396e46; sourceTree = SOURCE_ROOT; };
+		274D6430150C25AC00521B70 /* 2f6bbcc16dc368936920d08311f08a91212566 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 2f6bbcc16dc368936920d08311f08a91212566; path = ../../../addons/ofxControlPanel/.git/objects/54/2f6bbcc16dc368936920d08311f08a91212566; sourceTree = SOURCE_ROOT; };
+		274D6432150C25AC00521B70 /* 06f13305edb6775160c25adabf42c1d911b997 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 06f13305edb6775160c25adabf42c1d911b997; path = ../../../addons/ofxControlPanel/.git/objects/55/06f13305edb6775160c25adabf42c1d911b997; sourceTree = SOURCE_ROOT; };
+		274D6434150C25AC00521B70 /* 8643ef0f378d556dfff7c6ccbbf0b195a7ca5a */ = {isa = PBXFileReference; lastKnownFileType = text; name = 8643ef0f378d556dfff7c6ccbbf0b195a7ca5a; path = ../../../addons/ofxControlPanel/.git/objects/57/8643ef0f378d556dfff7c6ccbbf0b195a7ca5a; sourceTree = SOURCE_ROOT; };
+		274D6436150C25AC00521B70 /* a877b91dadc96fad59ec3d7e661188b56a1d3f */ = {isa = PBXFileReference; lastKnownFileType = text; name = a877b91dadc96fad59ec3d7e661188b56a1d3f; path = ../../../addons/ofxControlPanel/.git/objects/58/a877b91dadc96fad59ec3d7e661188b56a1d3f; sourceTree = SOURCE_ROOT; };
+		274D6438150C25AC00521B70 /* 083b71e398035130e4b46fda555af1d5d3e3cc */ = {isa = PBXFileReference; lastKnownFileType = text; name = 083b71e398035130e4b46fda555af1d5d3e3cc; path = ../../../addons/ofxControlPanel/.git/objects/5b/083b71e398035130e4b46fda555af1d5d3e3cc; sourceTree = SOURCE_ROOT; };
+		274D6439150C25AC00521B70 /* 6f916eb1b98b394ef452556530cf5972535374 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 6f916eb1b98b394ef452556530cf5972535374; path = ../../../addons/ofxControlPanel/.git/objects/5b/6f916eb1b98b394ef452556530cf5972535374; sourceTree = SOURCE_ROOT; };
+		274D643B150C25AC00521B70 /* 9115d1889e431b8eee3b984fb87f633c2be3ab */ = {isa = PBXFileReference; lastKnownFileType = text; name = 9115d1889e431b8eee3b984fb87f633c2be3ab; path = ../../../addons/ofxControlPanel/.git/objects/5e/9115d1889e431b8eee3b984fb87f633c2be3ab; sourceTree = SOURCE_ROOT; };
+		274D643D150C25AC00521B70 /* f41dee26abc17020eba7e0b95e2e48a7b0edc4 */ = {isa = PBXFileReference; lastKnownFileType = text; name = f41dee26abc17020eba7e0b95e2e48a7b0edc4; path = ../../../addons/ofxControlPanel/.git/objects/5f/f41dee26abc17020eba7e0b95e2e48a7b0edc4; sourceTree = SOURCE_ROOT; };
+		274D643F150C25AC00521B70 /* 630f2991badded8652a99c44c16dd466302733 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 630f2991badded8652a99c44c16dd466302733; path = ../../../addons/ofxControlPanel/.git/objects/61/630f2991badded8652a99c44c16dd466302733; sourceTree = SOURCE_ROOT; };
+		274D6441150C25AC00521B70 /* c67bba6811bd14d045c013d94936ad77f6620a */ = {isa = PBXFileReference; lastKnownFileType = text; name = c67bba6811bd14d045c013d94936ad77f6620a; path = ../../../addons/ofxControlPanel/.git/objects/67/c67bba6811bd14d045c013d94936ad77f6620a; sourceTree = SOURCE_ROOT; };
+		274D6443150C25AC00521B70 /* 36f80b6f1043ab2622f8a5c48ead89064b9d8a */ = {isa = PBXFileReference; lastKnownFileType = text; name = 36f80b6f1043ab2622f8a5c48ead89064b9d8a; path = ../../../addons/ofxControlPanel/.git/objects/68/36f80b6f1043ab2622f8a5c48ead89064b9d8a; sourceTree = SOURCE_ROOT; };
+		274D6445150C25AC00521B70 /* 0191ec2ecbe40f012b1290219fcc7e0812758c */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0191ec2ecbe40f012b1290219fcc7e0812758c; path = ../../../addons/ofxControlPanel/.git/objects/72/0191ec2ecbe40f012b1290219fcc7e0812758c; sourceTree = SOURCE_ROOT; };
+		274D6446150C25AC00521B70 /* 2cc42f46252447adc3f17ee505aa2e151ba92e */ = {isa = PBXFileReference; lastKnownFileType = text; name = 2cc42f46252447adc3f17ee505aa2e151ba92e; path = ../../../addons/ofxControlPanel/.git/objects/72/2cc42f46252447adc3f17ee505aa2e151ba92e; sourceTree = SOURCE_ROOT; };
+		274D6448150C25AC00521B70 /* a8625e06df898157e2db73f26613d733255f5c */ = {isa = PBXFileReference; lastKnownFileType = text; name = a8625e06df898157e2db73f26613d733255f5c; path = ../../../addons/ofxControlPanel/.git/objects/77/a8625e06df898157e2db73f26613d733255f5c; sourceTree = SOURCE_ROOT; };
+		274D644A150C25AC00521B70 /* b5a295eec9d8d2bf2d6921ed2fa33299f8a672 */ = {isa = PBXFileReference; lastKnownFileType = text; name = b5a295eec9d8d2bf2d6921ed2fa33299f8a672; path = ../../../addons/ofxControlPanel/.git/objects/78/b5a295eec9d8d2bf2d6921ed2fa33299f8a672; sourceTree = SOURCE_ROOT; };
+		274D644C150C25AC00521B70 /* 47af1a2ae58e146de378ea50bd96351dab998b */ = {isa = PBXFileReference; lastKnownFileType = text; name = 47af1a2ae58e146de378ea50bd96351dab998b; path = ../../../addons/ofxControlPanel/.git/objects/87/47af1a2ae58e146de378ea50bd96351dab998b; sourceTree = SOURCE_ROOT; };
+		274D644E150C25AC00521B70 /* cf5750cd76b0298eee8bd9cdec854e92b7e9cb */ = {isa = PBXFileReference; lastKnownFileType = text; name = cf5750cd76b0298eee8bd9cdec854e92b7e9cb; path = ../../../addons/ofxControlPanel/.git/objects/89/cf5750cd76b0298eee8bd9cdec854e92b7e9cb; sourceTree = SOURCE_ROOT; };
+		274D6450150C25AC00521B70 /* b469571f4c7e76a0b734551e3fc5754d9e5961 */ = {isa = PBXFileReference; lastKnownFileType = text; name = b469571f4c7e76a0b734551e3fc5754d9e5961; path = ../../../addons/ofxControlPanel/.git/objects/8c/b469571f4c7e76a0b734551e3fc5754d9e5961; sourceTree = SOURCE_ROOT; };
+		274D6452150C25AC00521B70 /* 066fac7d63327e231d6ca5319c53525a4684ef */ = {isa = PBXFileReference; lastKnownFileType = text; name = 066fac7d63327e231d6ca5319c53525a4684ef; path = ../../../addons/ofxControlPanel/.git/objects/93/066fac7d63327e231d6ca5319c53525a4684ef; sourceTree = SOURCE_ROOT; };
+		274D6454150C25AC00521B70 /* 160f113e613c52ba60d41fa817619bd167b85c */ = {isa = PBXFileReference; lastKnownFileType = text; name = 160f113e613c52ba60d41fa817619bd167b85c; path = ../../../addons/ofxControlPanel/.git/objects/9b/160f113e613c52ba60d41fa817619bd167b85c; sourceTree = SOURCE_ROOT; };
 		274D6456150C25AC00521B70 /* 381850b358505888399e244ca353bf28cc79cd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 381850b358505888399e244ca353bf28cc79cd; path = ../../../addons/ofxControlPanel/.git/objects/9c/381850b358505888399e244ca353bf28cc79cd; sourceTree = SOURCE_ROOT; };
-		274D6458150C25AC00521B70 /* 54fe1b19358fa8b6cf6c84e84101ca50b8e6ec */ = {isa = PBXFileReference; lastKnownFileType = file; name = 54fe1b19358fa8b6cf6c84e84101ca50b8e6ec; path = ../../../addons/ofxControlPanel/.git/objects/a4/54fe1b19358fa8b6cf6c84e84101ca50b8e6ec; sourceTree = SOURCE_ROOT; };
-		274D645A150C25AC00521B70 /* 180966c2f4a37c019ff9eecb0beb3a189a20d7 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 180966c2f4a37c019ff9eecb0beb3a189a20d7; path = ../../../addons/ofxControlPanel/.git/objects/a6/180966c2f4a37c019ff9eecb0beb3a189a20d7; sourceTree = SOURCE_ROOT; };
+		274D6458150C25AC00521B70 /* 54fe1b19358fa8b6cf6c84e84101ca50b8e6ec */ = {isa = PBXFileReference; lastKnownFileType = text; name = 54fe1b19358fa8b6cf6c84e84101ca50b8e6ec; path = ../../../addons/ofxControlPanel/.git/objects/a4/54fe1b19358fa8b6cf6c84e84101ca50b8e6ec; sourceTree = SOURCE_ROOT; };
+		274D645A150C25AC00521B70 /* 180966c2f4a37c019ff9eecb0beb3a189a20d7 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 180966c2f4a37c019ff9eecb0beb3a189a20d7; path = ../../../addons/ofxControlPanel/.git/objects/a6/180966c2f4a37c019ff9eecb0beb3a189a20d7; sourceTree = SOURCE_ROOT; };
 		274D645C150C25AC00521B70 /* 0448b1936e20e6e8e01fec7444d8a0fc62c0b8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 0448b1936e20e6e8e01fec7444d8a0fc62c0b8; path = ../../../addons/ofxControlPanel/.git/objects/a7/0448b1936e20e6e8e01fec7444d8a0fc62c0b8; sourceTree = SOURCE_ROOT; };
-		274D645E150C25AC00521B70 /* 5944e44c40ab6df1e078d971106fc43dd0f251 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5944e44c40ab6df1e078d971106fc43dd0f251; path = ../../../addons/ofxControlPanel/.git/objects/a8/5944e44c40ab6df1e078d971106fc43dd0f251; sourceTree = SOURCE_ROOT; };
-		274D6460150C25AC00521B70 /* cf237c6fbdfadb45753dc8183837c213c6e87a */ = {isa = PBXFileReference; lastKnownFileType = file; name = cf237c6fbdfadb45753dc8183837c213c6e87a; path = ../../../addons/ofxControlPanel/.git/objects/af/cf237c6fbdfadb45753dc8183837c213c6e87a; sourceTree = SOURCE_ROOT; };
-		274D6462150C25AC00521B70 /* 0c3a5dd8ca3bba1c2ea4379439748be2019d91 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 0c3a5dd8ca3bba1c2ea4379439748be2019d91; path = ../../../addons/ofxControlPanel/.git/objects/b1/0c3a5dd8ca3bba1c2ea4379439748be2019d91; sourceTree = SOURCE_ROOT; };
-		274D6464150C25AC00521B70 /* 4306eefb3d16eb27aaee99ccfaf58fdd57a7ce */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4306eefb3d16eb27aaee99ccfaf58fdd57a7ce; path = ../../../addons/ofxControlPanel/.git/objects/b2/4306eefb3d16eb27aaee99ccfaf58fdd57a7ce; sourceTree = SOURCE_ROOT; };
-		274D6465150C25AC00521B70 /* afecb1c079799a9a9dc6f4c728a80b49550c61 */ = {isa = PBXFileReference; lastKnownFileType = file; name = afecb1c079799a9a9dc6f4c728a80b49550c61; path = ../../../addons/ofxControlPanel/.git/objects/b2/afecb1c079799a9a9dc6f4c728a80b49550c61; sourceTree = SOURCE_ROOT; };
-		274D6466150C25AC00521B70 /* b0bffd67ec41dd0bd3b31ea0993599b1fb33ea */ = {isa = PBXFileReference; lastKnownFileType = file; name = b0bffd67ec41dd0bd3b31ea0993599b1fb33ea; path = ../../../addons/ofxControlPanel/.git/objects/b2/b0bffd67ec41dd0bd3b31ea0993599b1fb33ea; sourceTree = SOURCE_ROOT; };
-		274D6468150C25AC00521B70 /* 416d771c46dd0ed0ff063ed32bd43b55b94129 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 416d771c46dd0ed0ff063ed32bd43b55b94129; path = ../../../addons/ofxControlPanel/.git/objects/b4/416d771c46dd0ed0ff063ed32bd43b55b94129; sourceTree = SOURCE_ROOT; };
-		274D646A150C25AC00521B70 /* 5024d2a60acb96674279f1b13d6c298d85f3d3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 5024d2a60acb96674279f1b13d6c298d85f3d3; path = ../../../addons/ofxControlPanel/.git/objects/b7/5024d2a60acb96674279f1b13d6c298d85f3d3; sourceTree = SOURCE_ROOT; };
-		274D646C150C25AC00521B70 /* d1cc2b09d22c24c36355a2fd3c519726ebd7ae */ = {isa = PBXFileReference; lastKnownFileType = file; name = d1cc2b09d22c24c36355a2fd3c519726ebd7ae; path = ../../../addons/ofxControlPanel/.git/objects/c0/d1cc2b09d22c24c36355a2fd3c519726ebd7ae; sourceTree = SOURCE_ROOT; };
+		274D645E150C25AC00521B70 /* 5944e44c40ab6df1e078d971106fc43dd0f251 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 5944e44c40ab6df1e078d971106fc43dd0f251; path = ../../../addons/ofxControlPanel/.git/objects/a8/5944e44c40ab6df1e078d971106fc43dd0f251; sourceTree = SOURCE_ROOT; };
+		274D6460150C25AC00521B70 /* cf237c6fbdfadb45753dc8183837c213c6e87a */ = {isa = PBXFileReference; lastKnownFileType = text; name = cf237c6fbdfadb45753dc8183837c213c6e87a; path = ../../../addons/ofxControlPanel/.git/objects/af/cf237c6fbdfadb45753dc8183837c213c6e87a; sourceTree = SOURCE_ROOT; };
+		274D6462150C25AC00521B70 /* 0c3a5dd8ca3bba1c2ea4379439748be2019d91 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0c3a5dd8ca3bba1c2ea4379439748be2019d91; path = ../../../addons/ofxControlPanel/.git/objects/b1/0c3a5dd8ca3bba1c2ea4379439748be2019d91; sourceTree = SOURCE_ROOT; };
+		274D6464150C25AC00521B70 /* 4306eefb3d16eb27aaee99ccfaf58fdd57a7ce */ = {isa = PBXFileReference; lastKnownFileType = text; name = 4306eefb3d16eb27aaee99ccfaf58fdd57a7ce; path = ../../../addons/ofxControlPanel/.git/objects/b2/4306eefb3d16eb27aaee99ccfaf58fdd57a7ce; sourceTree = SOURCE_ROOT; };
+		274D6465150C25AC00521B70 /* afecb1c079799a9a9dc6f4c728a80b49550c61 */ = {isa = PBXFileReference; lastKnownFileType = text; name = afecb1c079799a9a9dc6f4c728a80b49550c61; path = ../../../addons/ofxControlPanel/.git/objects/b2/afecb1c079799a9a9dc6f4c728a80b49550c61; sourceTree = SOURCE_ROOT; };
+		274D6466150C25AC00521B70 /* b0bffd67ec41dd0bd3b31ea0993599b1fb33ea */ = {isa = PBXFileReference; lastKnownFileType = text; name = b0bffd67ec41dd0bd3b31ea0993599b1fb33ea; path = ../../../addons/ofxControlPanel/.git/objects/b2/b0bffd67ec41dd0bd3b31ea0993599b1fb33ea; sourceTree = SOURCE_ROOT; };
+		274D6468150C25AC00521B70 /* 416d771c46dd0ed0ff063ed32bd43b55b94129 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 416d771c46dd0ed0ff063ed32bd43b55b94129; path = ../../../addons/ofxControlPanel/.git/objects/b4/416d771c46dd0ed0ff063ed32bd43b55b94129; sourceTree = SOURCE_ROOT; };
+		274D646A150C25AC00521B70 /* 5024d2a60acb96674279f1b13d6c298d85f3d3 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 5024d2a60acb96674279f1b13d6c298d85f3d3; path = ../../../addons/ofxControlPanel/.git/objects/b7/5024d2a60acb96674279f1b13d6c298d85f3d3; sourceTree = SOURCE_ROOT; };
+		274D646C150C25AC00521B70 /* d1cc2b09d22c24c36355a2fd3c519726ebd7ae */ = {isa = PBXFileReference; lastKnownFileType = text; name = d1cc2b09d22c24c36355a2fd3c519726ebd7ae; path = ../../../addons/ofxControlPanel/.git/objects/c0/d1cc2b09d22c24c36355a2fd3c519726ebd7ae; sourceTree = SOURCE_ROOT; };
 		274D646E150C25AC00521B70 /* ba4131db75c97b8ea735d02d51554d75cbee7b */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ba4131db75c97b8ea735d02d51554d75cbee7b; path = ../../../addons/ofxControlPanel/.git/objects/c5/ba4131db75c97b8ea735d02d51554d75cbee7b; sourceTree = SOURCE_ROOT; };
-		274D6470150C25AC00521B70 /* 82ceee17d827efc68b26330a6236598cd31bb9 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 82ceee17d827efc68b26330a6236598cd31bb9; path = ../../../addons/ofxControlPanel/.git/objects/c9/82ceee17d827efc68b26330a6236598cd31bb9; sourceTree = SOURCE_ROOT; };
+		274D6470150C25AC00521B70 /* 82ceee17d827efc68b26330a6236598cd31bb9 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 82ceee17d827efc68b26330a6236598cd31bb9; path = ../../../addons/ofxControlPanel/.git/objects/c9/82ceee17d827efc68b26330a6236598cd31bb9; sourceTree = SOURCE_ROOT; };
 		274D6472150C25AC00521B70 /* f703e53c50ca7833124e4892e223bddec8fb26 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = f703e53c50ca7833124e4892e223bddec8fb26; path = ../../../addons/ofxControlPanel/.git/objects/cd/f703e53c50ca7833124e4892e223bddec8fb26; sourceTree = SOURCE_ROOT; };
-		274D6474150C25AC00521B70 /* 48f96fc4cc54f9db452043ab4fdda56d6dddc2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 48f96fc4cc54f9db452043ab4fdda56d6dddc2; path = ../../../addons/ofxControlPanel/.git/objects/ce/48f96fc4cc54f9db452043ab4fdda56d6dddc2; sourceTree = SOURCE_ROOT; };
-		274D6476150C25AC00521B70 /* 3869c7ba48e81d84499164c91b29d14fb4f533 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3869c7ba48e81d84499164c91b29d14fb4f533; path = ../../../addons/ofxControlPanel/.git/objects/d0/3869c7ba48e81d84499164c91b29d14fb4f533; sourceTree = SOURCE_ROOT; };
-		274D6478150C25AC00521B70 /* dc7e40ff23b171005dfcaa11f3d0cf340392af */ = {isa = PBXFileReference; lastKnownFileType = file; name = dc7e40ff23b171005dfcaa11f3d0cf340392af; path = ../../../addons/ofxControlPanel/.git/objects/d3/dc7e40ff23b171005dfcaa11f3d0cf340392af; sourceTree = SOURCE_ROOT; };
-		274D647A150C25AC00521B70 /* 1da37afa445ecb45a3cc8061fcbde1a4916f3f */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1da37afa445ecb45a3cc8061fcbde1a4916f3f; path = ../../../addons/ofxControlPanel/.git/objects/d4/1da37afa445ecb45a3cc8061fcbde1a4916f3f; sourceTree = SOURCE_ROOT; };
-		274D647C150C25AC00521B70 /* 45599e4a6acd73103a8fa9b9981ef2cb8b2d40 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 45599e4a6acd73103a8fa9b9981ef2cb8b2d40; path = ../../../addons/ofxControlPanel/.git/objects/e0/45599e4a6acd73103a8fa9b9981ef2cb8b2d40; sourceTree = SOURCE_ROOT; };
-		274D647E150C25AC00521B70 /* 105a87a749003fdc7194168ecc40d1e167ff99 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 105a87a749003fdc7194168ecc40d1e167ff99; path = ../../../addons/ofxControlPanel/.git/objects/e5/105a87a749003fdc7194168ecc40d1e167ff99; sourceTree = SOURCE_ROOT; };
-		274D6480150C25AC00521B70 /* 3d4a9c6684c7c6ac3f0c30a1d776312ecf5b36 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3d4a9c6684c7c6ac3f0c30a1d776312ecf5b36; path = ../../../addons/ofxControlPanel/.git/objects/eb/3d4a9c6684c7c6ac3f0c30a1d776312ecf5b36; sourceTree = SOURCE_ROOT; };
-		274D6482150C25AC00521B70 /* ecca36e9aa1a434f3919598c17b7a49739c6a2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = ecca36e9aa1a434f3919598c17b7a49739c6a2; path = ../../../addons/ofxControlPanel/.git/objects/ef/ecca36e9aa1a434f3919598c17b7a49739c6a2; sourceTree = SOURCE_ROOT; };
+		274D6474150C25AC00521B70 /* 48f96fc4cc54f9db452043ab4fdda56d6dddc2 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 48f96fc4cc54f9db452043ab4fdda56d6dddc2; path = ../../../addons/ofxControlPanel/.git/objects/ce/48f96fc4cc54f9db452043ab4fdda56d6dddc2; sourceTree = SOURCE_ROOT; };
+		274D6476150C25AC00521B70 /* 3869c7ba48e81d84499164c91b29d14fb4f533 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 3869c7ba48e81d84499164c91b29d14fb4f533; path = ../../../addons/ofxControlPanel/.git/objects/d0/3869c7ba48e81d84499164c91b29d14fb4f533; sourceTree = SOURCE_ROOT; };
+		274D6478150C25AC00521B70 /* dc7e40ff23b171005dfcaa11f3d0cf340392af */ = {isa = PBXFileReference; lastKnownFileType = text; name = dc7e40ff23b171005dfcaa11f3d0cf340392af; path = ../../../addons/ofxControlPanel/.git/objects/d3/dc7e40ff23b171005dfcaa11f3d0cf340392af; sourceTree = SOURCE_ROOT; };
+		274D647A150C25AC00521B70 /* 1da37afa445ecb45a3cc8061fcbde1a4916f3f */ = {isa = PBXFileReference; lastKnownFileType = text; name = 1da37afa445ecb45a3cc8061fcbde1a4916f3f; path = ../../../addons/ofxControlPanel/.git/objects/d4/1da37afa445ecb45a3cc8061fcbde1a4916f3f; sourceTree = SOURCE_ROOT; };
+		274D647C150C25AC00521B70 /* 45599e4a6acd73103a8fa9b9981ef2cb8b2d40 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 45599e4a6acd73103a8fa9b9981ef2cb8b2d40; path = ../../../addons/ofxControlPanel/.git/objects/e0/45599e4a6acd73103a8fa9b9981ef2cb8b2d40; sourceTree = SOURCE_ROOT; };
+		274D647E150C25AC00521B70 /* 105a87a749003fdc7194168ecc40d1e167ff99 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 105a87a749003fdc7194168ecc40d1e167ff99; path = ../../../addons/ofxControlPanel/.git/objects/e5/105a87a749003fdc7194168ecc40d1e167ff99; sourceTree = SOURCE_ROOT; };
+		274D6480150C25AC00521B70 /* 3d4a9c6684c7c6ac3f0c30a1d776312ecf5b36 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 3d4a9c6684c7c6ac3f0c30a1d776312ecf5b36; path = ../../../addons/ofxControlPanel/.git/objects/eb/3d4a9c6684c7c6ac3f0c30a1d776312ecf5b36; sourceTree = SOURCE_ROOT; };
+		274D6482150C25AC00521B70 /* ecca36e9aa1a434f3919598c17b7a49739c6a2 */ = {isa = PBXFileReference; lastKnownFileType = text; name = ecca36e9aa1a434f3919598c17b7a49739c6a2; path = ../../../addons/ofxControlPanel/.git/objects/ef/ecca36e9aa1a434f3919598c17b7a49739c6a2; sourceTree = SOURCE_ROOT; };
 		274D6484150C25AC00521B70 /* d5ca0b53ef6114d6c52075ea22bb4ea2f140bd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = d5ca0b53ef6114d6c52075ea22bb4ea2f140bd; path = ../../../addons/ofxControlPanel/.git/objects/f5/d5ca0b53ef6114d6c52075ea22bb4ea2f140bd; sourceTree = SOURCE_ROOT; };
-		274D6486150C25AC00521B70 /* d09ccfa37002c913c2ecd2546353b5a106e897 */ = {isa = PBXFileReference; lastKnownFileType = file; name = d09ccfa37002c913c2ecd2546353b5a106e897; path = ../../../addons/ofxControlPanel/.git/objects/f8/d09ccfa37002c913c2ecd2546353b5a106e897; sourceTree = SOURCE_ROOT; };
-		274D6488150C25AC00521B70 /* 4b5b6ef3907954b174989f338f84e6716d8443 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4b5b6ef3907954b174989f338f84e6716d8443; path = ../../../addons/ofxControlPanel/.git/objects/f9/4b5b6ef3907954b174989f338f84e6716d8443; sourceTree = SOURCE_ROOT; };
-		274D648A150C25AC00521B70 /* 61c1aafacea3a2eb3a82107e1492c4fb725d1a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 61c1aafacea3a2eb3a82107e1492c4fb725d1a; path = ../../../addons/ofxControlPanel/.git/objects/fe/61c1aafacea3a2eb3a82107e1492c4fb725d1a; sourceTree = SOURCE_ROOT; };
+		274D6486150C25AC00521B70 /* d09ccfa37002c913c2ecd2546353b5a106e897 */ = {isa = PBXFileReference; lastKnownFileType = text; name = d09ccfa37002c913c2ecd2546353b5a106e897; path = ../../../addons/ofxControlPanel/.git/objects/f8/d09ccfa37002c913c2ecd2546353b5a106e897; sourceTree = SOURCE_ROOT; };
+		274D6488150C25AC00521B70 /* 4b5b6ef3907954b174989f338f84e6716d8443 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 4b5b6ef3907954b174989f338f84e6716d8443; path = ../../../addons/ofxControlPanel/.git/objects/f9/4b5b6ef3907954b174989f338f84e6716d8443; sourceTree = SOURCE_ROOT; };
+		274D648A150C25AC00521B70 /* 61c1aafacea3a2eb3a82107e1492c4fb725d1a */ = {isa = PBXFileReference; lastKnownFileType = text; name = 61c1aafacea3a2eb3a82107e1492c4fb725d1a; path = ../../../addons/ofxControlPanel/.git/objects/fe/61c1aafacea3a2eb3a82107e1492c4fb725d1a; sourceTree = SOURCE_ROOT; };
 		274D648D150C25AC00521B70 /* pack-c079d36850f58f5851cfe6a9b3435bb6a6780672.idx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pack-c079d36850f58f5851cfe6a9b3435bb6a6780672.idx"; path = "../../../addons/ofxControlPanel/.git/objects/pack/pack-c079d36850f58f5851cfe6a9b3435bb6a6780672.idx"; sourceTree = SOURCE_ROOT; };
 		274D648E150C25AC00521B70 /* pack-c079d36850f58f5851cfe6a9b3435bb6a6780672.pack */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pack-c079d36850f58f5851cfe6a9b3435bb6a6780672.pack"; path = "../../../addons/ofxControlPanel/.git/objects/pack/pack-c079d36850f58f5851cfe6a9b3435bb6a6780672.pack"; sourceTree = SOURCE_ROOT; };
 		274D648F150C25AC00521B70 /* ORIG_HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ORIG_HEAD; path = ../../../addons/ofxControlPanel/.git/ORIG_HEAD; sourceTree = SOURCE_ROOT; };
@@ -391,6 +393,12 @@
 		274D671F150C273500521B70 /* background_segm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = background_segm.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video/background_segm.hpp; sourceTree = SOURCE_ROOT; };
 		274D6720150C273500521B70 /* tracking.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = tracking.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video/tracking.hpp; sourceTree = SOURCE_ROOT; };
 		274D6766150C273500521B70 /* opencv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = opencv.a; path = ../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a; sourceTree = SOURCE_ROOT; };
+		5B3022C9184878C0005C75A8 /* ETF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETF.h; sourceTree = "<group>"; };
+		5B3022CA184878C0005C75A8 /* fdog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fdog.h; sourceTree = "<group>"; };
+		5B3022CB184878C0005C75A8 /* imatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imatrix.h; sourceTree = "<group>"; };
+		5B3022CC184878C0005C75A8 /* myvec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myvec.h; sourceTree = "<group>"; };
+		5B3022CE184878C0005C75A8 /* ETF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ETF.cpp; sourceTree = "<group>"; };
+		5B3022CF184878C0005C75A8 /* fdog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fdog.cpp; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -402,7 +410,7 @@
 		E45BE9770E8CC7DD009D7055 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
-		E4B69B5B0A3A1756003C02F2 /* mapamok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapamok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69B5B0A3A1756003C02F2 /* mapamokDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapamokDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -418,7 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
-				E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
 				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
 				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
 				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
@@ -1442,6 +1450,7 @@
 		274D650A150C25E300521B70 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				5B3022C6184878C0005C75A8 /* CLD */,
 				274D66CF150C273500521B70 /* opencv */,
 				274D650C150C25E300521B70 /* ofxCv */,
 			);
@@ -1737,6 +1746,43 @@
 			path = ../../../addons/ofxOpenCv/libs/opencv/lib/osx;
 			sourceTree = SOURCE_ROOT;
 		};
+		5B3022C6184878C0005C75A8 /* CLD */ = {
+			isa = PBXGroup;
+			children = (
+				5B3022C7184878C0005C75A8 /* include */,
+				5B3022CD184878C0005C75A8 /* src */,
+			);
+			path = CLD;
+			sourceTree = "<group>";
+		};
+		5B3022C7184878C0005C75A8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5B3022C8184878C0005C75A8 /* CLD */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		5B3022C8184878C0005C75A8 /* CLD */ = {
+			isa = PBXGroup;
+			children = (
+				5B3022C9184878C0005C75A8 /* ETF.h */,
+				5B3022CA184878C0005C75A8 /* fdog.h */,
+				5B3022CB184878C0005C75A8 /* imatrix.h */,
+				5B3022CC184878C0005C75A8 /* myvec.h */,
+			);
+			path = CLD;
+			sourceTree = "<group>";
+		};
+		5B3022CD184878C0005C75A8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5B3022CE184878C0005C75A8 /* ETF.cpp */,
+				5B3022CF184878C0005C75A8 /* fdog.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
@@ -1778,7 +1824,7 @@
 		E4328144138ABC890047C5CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4328148138ABC890047C5CB /* openFrameworks.a */,
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1801,7 +1847,7 @@
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				E45BE5980E8CC70C009D7055 /* frameworks */,
-				E4B69B5B0A3A1756003C02F2 /* mapamok.app */,
+				E4B69B5B0A3A1756003C02F2 /* mapamokDebug.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1846,7 +1892,7 @@
 			);
 			name = mapamok;
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* mapamok.app */;
+			productReference = E4B69B5B0A3A1756003C02F2 /* mapamokDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1881,10 +1927,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E4328148138ABC890047C5CB /* openFrameworks.a */ = {
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = openFrameworks.a;
+			path = openFrameworksDebug.a;
 			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1954,6 +2000,8 @@
 				274D657C150C25E300521B70 /* Tracker.cpp in Sources */,
 				274D657D150C25E300521B70 /* Utilities.cpp in Sources */,
 				274D657E150C25E300521B70 /* Wrappers.cpp in Sources */,
+				5B3022D0184878C0005C75A8 /* ETF.cpp in Sources */,
+				5B3022D1184878C0005C75A8 /* fdog.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
