@@ -29,6 +29,7 @@ void testApp::setup() {
 	setupMesh();	
 	setupControlPanel();
     syphonClient.initialize("Arena", "Composition");
+    osc.setup(30274);
 }
 
 void testApp::update() {
@@ -46,6 +47,18 @@ void testApp::update() {
 		updateRenderMode();
 		cam.disableMouseInput();
 	}
+    
+    while (osc.hasWaitingMessages()) {
+        ofxOscMessage msg;
+        if(osc.getNextMessage(&msg)) {
+            string addr = msg.getAddress();
+            if (addr == "/mapamok/mode") {
+                seti("drawMode", msg.getArgAsInt32(0));
+            } else if (addr == "/mapamok/lineWidth") {
+                seti("lineWidth", msg.getArgAsInt32(0));
+            }
+        }
+    }
 }
 
 void enableFog(float nearFog, float farFog) {

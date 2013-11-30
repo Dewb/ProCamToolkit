@@ -8,6 +8,7 @@
 #include "ofxSyphon.h"
 #include "LineArt.h"
 #include "radomeSyphonClient.h"
+#include "ofxOscReceiver.h"
 
 class testApp : public ofBaseApp {
 public:
@@ -42,6 +43,7 @@ public:
 	ofLight light;
 	ofxAutoControlPanel panel;
     radomeSyphonClient syphonClient;
+    ofxOscReceiver osc;
 	
 	vector<cv::Point3f> objectPoints;
 	vector<cv::Point2f> imagePoints;
