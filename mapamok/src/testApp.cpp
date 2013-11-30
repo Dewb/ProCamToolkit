@@ -209,6 +209,7 @@ void testApp::render() {
 		
 		shader.begin();
         if (syphonClient.maybeBind()) {
+            shader.setUniform1f("pass", 0);
             shader.setUniform2f("videoSize", syphonClient.getWidth(), syphonClient.getHeight());
             shader.setUniformTexture("video", syphonClient.getTexture(), syphonClient.getTextureId());
         }
@@ -226,6 +227,7 @@ void testApp::render() {
 			break;
 		case 1: // fullWireframe
 			if(useShader) shader.begin();
+            shader.setUniform1f("pass", 1.0);
 			objectMesh.drawWireframe();
 			if(useShader) shader.end();
 			break;
@@ -237,11 +239,13 @@ void testApp::render() {
 			break;
         case 4: // shader + wireframe
             shader.begin();
+            shader.setUniform1f("pass", 1.0);
+			objectMesh.drawWireframe();
+			shader.setUniform1f("pass", 0.0);
 			glEnable(GL_CULL_FACE);
 			glCullFace(GL_BACK);
 			objectMesh.drawFaces();
 			shader.end();
-            LineArt::draw(objectMesh, false, transparentBlack, NULL);
             break;
 	}
 	glPopAttrib();

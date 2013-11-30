@@ -5,6 +5,7 @@ uniform float elapsedTime;
 varying vec3 position, normal;
 varying float randomOffset;
 uniform sampler2DRect video;
+uniform float pass;
 
 const vec4 on = vec4(1.);
 const vec4 off = vec4(vec3(0.), 1.);
@@ -34,8 +35,11 @@ float quasi(float interferenceAngle, vec2 point) {
 }
 
 void main() {
-    // Draw Syphon texture (prototype; coordinates specific to test model.)
-    vec2 texCoords = vec2(810.0 - (position.x*0.220+180.0 + position.y*0.225+180.0), position.z*0.32);
+    // Draw Syphon texture (prototype; coordinates specific to test model and 2048x2048 input texture)
+    vec2 texCoords = vec2(1548.0 - (position.x*0.55+180.0 + position.y*0.58+180.0), 290.0 + position.z*0.78);
+    
+    if (pass == 1.0) texCoords.y = position.z * 0.15;
+    
     gl_FragColor = texture2DRect(video, texCoords);
 }
 
